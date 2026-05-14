@@ -1136,7 +1136,7 @@
       "title": "Use Mounted After",
       "description": "Hook returns true after component mounted for given delay. For client-only animations.",
       "files": [
-        { "path": "src/hooks/use-mounted-after.ts", "type": "registry:hook", "target": "src/hooks/use-mounted-after.ts" }
+        { "path": "src/hooks/use-mounted-after.ts", "type": "registry:hook" }
       ]
     },
     {
@@ -1145,7 +1145,7 @@
       "title": "Card Item Types",
       "description": "Type definitions and size map for the CardGrid component.",
       "files": [
-        { "path": "src/lib/cards.ts", "type": "registry:lib", "target": "src/lib/cards.ts" }
+        { "path": "src/lib/cards.ts", "type": "registry:lib" }
       ]
     },
     {
