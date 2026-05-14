@@ -79,7 +79,10 @@
           "sidebar-ring": "oklch(0.56 0.021 213.5)"
         }
       },
-      "dependencies": ["radix-ui", "@phosphor-icons/react"],
+      "dependencies": [
+        "radix-ui",
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "registry/common/globals.css",
@@ -119,14 +122,14 @@
       "title": "Blank",
       "description": "A blank application with all brand components and code",
       "registryDependencies": [
-        "theme",
-        "brand-header",
-        "brand-sidebar",
-        "login",
-        "logo",
-        "hero",
-        "promo",
-        "product-grid",
+        "https://ui.arthurreira.dev/r/theme.json",
+        "https://ui.arthurreira.dev/r/brand-header.json",
+        "https://ui.arthurreira.dev/r/brand-sidebar.json",
+        "https://ui.arthurreira.dev/r/login.json",
+        "https://ui.arthurreira.dev/r/logo.json",
+        "https://ui.arthurreira.dev/r/hero.json",
+        "https://ui.arthurreira.dev/r/promo.json",
+        "https://ui.arthurreira.dev/r/product-grid.json",
         "accordion",
         "alert",
         "alert-dialog",
@@ -173,8 +176,8 @@
         "toggle",
         "toggle-group",
         "tooltip",
-        "data-table",
-        "date-picker"
+        "https://ui.arthurreira.dev/r/data-table.json",
+        "https://ui.arthurreira.dev/r/date-picker.json"
       ],
       "files": [
         {
@@ -195,14 +198,14 @@
       "title": "Dashboard",
       "description": "A dashboard application with your brand themed components",
       "registryDependencies": [
-        "theme",
-        "brand-header",
-        "brand-sidebar",
-        "login",
-        "logo",
-        "hero",
-        "promo",
-        "product-grid",
+        "https://ui.arthurreira.dev/r/theme.json",
+        "https://ui.arthurreira.dev/r/brand-header.json",
+        "https://ui.arthurreira.dev/r/brand-sidebar.json",
+        "https://ui.arthurreira.dev/r/login.json",
+        "https://ui.arthurreira.dev/r/logo.json",
+        "https://ui.arthurreira.dev/r/hero.json",
+        "https://ui.arthurreira.dev/r/promo.json",
+        "https://ui.arthurreira.dev/r/product-grid.json",
         "accordion",
         "alert",
         "alert-dialog",
@@ -249,8 +252,8 @@
         "toggle",
         "toggle-group",
         "tooltip",
-        "data-table",
-        "date-picker"
+        "https://ui.arthurreira.dev/r/data-table.json",
+        "https://ui.arthurreira.dev/r/date-picker.json"
       ],
       "files": [
         {
@@ -271,14 +274,14 @@
       "title": "Store",
       "description": "A store application with your brand themed components",
       "registryDependencies": [
-        "theme",
-        "brand-header",
-        "brand-sidebar",
-        "login",
-        "logo",
-        "hero",
-        "promo",
-        "product-grid",
+        "https://ui.arthurreira.dev/r/theme.json",
+        "https://ui.arthurreira.dev/r/brand-header.json",
+        "https://ui.arthurreira.dev/r/brand-sidebar.json",
+        "https://ui.arthurreira.dev/r/login.json",
+        "https://ui.arthurreira.dev/r/logo.json",
+        "https://ui.arthurreira.dev/r/hero.json",
+        "https://ui.arthurreira.dev/r/promo.json",
+        "https://ui.arthurreira.dev/r/product-grid.json",
         "accordion",
         "alert",
         "alert-dialog",
@@ -325,8 +328,8 @@
         "toggle",
         "toggle-group",
         "tooltip",
-        "data-table",
-        "date-picker"
+        "https://ui.arthurreira.dev/r/data-table.json",
+        "https://ui.arthurreira.dev/r/date-picker.json"
       ],
       "files": [
         {
@@ -346,16 +349,18 @@
       "type": "registry:component",
       "title": "Brand Header",
       "description": "Styled header. Marketing mode (links prop) or app-shell mode (with sidebar).",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "registryDependencies": [
-        "theme",
+        "https://ui.arthurreira.dev/r/theme.json",
         "button",
         "input",
         "avatar",
         "sidebar",
         "sonner",
-        "logo",
-        "use-mounted-after"
+        "https://ui.arthurreira.dev/r/logo.json",
+        "https://ui.arthurreira.dev/r/use-mounted-after.json"
       ],
       "files": [
         {
@@ -380,9 +385,11 @@
       "type": "registry:component",
       "title": "Brand Sidebar",
       "description": "A styled, simple, reusable sidebar",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "registryDependencies": [
-        "theme",
+        "https://ui.arthurreira.dev/r/theme.json",
         "badge",
         "button",
         "sidebar",
@@ -417,10 +424,10 @@
         "zod"
       ],
       "registryDependencies": [
-        "theme",
+        "https://ui.arthurreira.dev/r/theme.json",
         "badge",
         "button",
-        "logo"
+        "https://ui.arthurreira.dev/r/logo.json"
       ],
       "files": [
         {
@@ -446,7 +453,7 @@
       "title": "Brand Logo",
       "description": "A styled, simple, reusable logo",
       "registryDependencies": [
-        "theme"
+        "https://ui.arthurreira.dev/r/theme.json"
       ],
       "files": [
         {
@@ -472,7 +479,7 @@
       "title": "Hero",
       "description": "Attention-grabbing section for the top of your landing pages.",
       "registryDependencies": [
-        "theme",
+        "https://ui.arthurreira.dev/r/theme.json",
         "badge",
         "button"
       ],
@@ -500,7 +507,7 @@
       "title": "Promo",
       "description": "Attention-grabbing section to display the current promotional deal.",
       "registryDependencies": [
-        "theme",
+        "https://ui.arthurreira.dev/r/theme.json",
         "button"
       ],
       "files": [
@@ -526,9 +533,12 @@
       "type": "registry:component",
       "title": "Product Grid",
       "description": "Product grid displaying all products with API to fetch data",
-      "dependencies": ["@phosphor-icons/react", "zod"],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "zod"
+      ],
       "registryDependencies": [
-        "theme"
+        "https://ui.arthurreira.dev/r/theme.json"
       ],
       "files": [
         {
@@ -553,7 +563,9 @@
       "type": "registry:ui",
       "title": "Accordion",
       "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/accordion.tsx",
@@ -626,7 +638,9 @@
       "type": "registry:ui",
       "title": "Breadcrumb",
       "description": "Displays the path to the current resource using a hierarchy of links.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/breadcrumb.tsx",
@@ -651,7 +665,9 @@
       "type": "registry:ui",
       "title": "Calendar",
       "description": "A date field component that allows users to enter and edit date.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/calendar.tsx",
@@ -676,7 +692,9 @@
       "type": "registry:ui",
       "title": "Carousel",
       "description": "A carousel with motion and swipe built using Embla.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/carousel.tsx",
@@ -701,7 +719,9 @@
       "type": "registry:ui",
       "title": "Checkbox",
       "description": "Allows users to select multiple items from a list of options.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/checkbox.tsx",
@@ -726,7 +746,9 @@
       "type": "registry:ui",
       "title": "Command",
       "description": "Fast, composable, unstyled command menu for React.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/command.tsx",
@@ -739,7 +761,9 @@
       "type": "registry:ui",
       "title": "Context Menu",
       "description": "Displays a menu located at the pointer, triggered by a right-click or a long-press.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/context-menu.tsx",
@@ -752,7 +776,9 @@
       "type": "registry:ui",
       "title": "Dialog",
       "description": "A modal dialog that interrupts the user with important content.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/dialog.tsx",
@@ -777,7 +803,9 @@
       "type": "registry:ui",
       "title": "Dropdown Menu",
       "description": "Displays a menu to the user triggered by a button.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/dropdown-menu.tsx",
@@ -826,7 +854,9 @@
       "type": "registry:ui",
       "title": "Input OTP",
       "description": "Accessible one-time password component with copy paste functionality.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/input-otp.tsx",
@@ -851,7 +881,9 @@
       "type": "registry:ui",
       "title": "Menubar",
       "description": "A visually persistent menu common in desktop applications.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/menubar.tsx",
@@ -864,7 +896,9 @@
       "type": "registry:ui",
       "title": "Navigation Menu",
       "description": "A collection of links for navigating websites.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/navigation-menu.tsx",
@@ -877,7 +911,9 @@
       "type": "registry:ui",
       "title": "Pagination",
       "description": "Pagination with page navigation, next and previous links.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/pagination.tsx",
@@ -914,7 +950,9 @@
       "type": "registry:ui",
       "title": "Radio Group",
       "description": "A set of checkable buttons where only one button can be checked at a time.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/radio-group.tsx",
@@ -927,7 +965,9 @@
       "type": "registry:ui",
       "title": "Resizable",
       "description": "Accessible resizable panel groups and layouts with keyboard support.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/resizable.tsx",
@@ -951,8 +991,10 @@
       "name": "select",
       "type": "registry:ui",
       "title": "Select",
-      "description": "Displays a list of options for the user to pick from—triggered by a button.",
-      "dependencies": ["@phosphor-icons/react"],
+      "description": "Displays a list of options for the user to pick from\u2014triggered by a button.",
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/select.tsx",
@@ -977,7 +1019,9 @@
       "type": "registry:ui",
       "title": "Sheet",
       "description": "Extends the Dialog component to display content that complements the main content of the screen.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/sheet.tsx",
@@ -990,7 +1034,9 @@
       "type": "registry:ui",
       "title": "Sidebar",
       "description": "A composable, themeable and customizable sidebar component.",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
       "files": [
         {
           "path": "src/components/ui/sidebar.tsx",
@@ -1062,7 +1108,7 @@
       "name": "tabs",
       "type": "registry:ui",
       "title": "Tabs",
-      "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "description": "A set of layered sections of content\u2014known as tab panels\u2014that are displayed one at a time.",
       "files": [
         {
           "path": "src/components/ui/tabs.tsx",
@@ -1127,7 +1173,10 @@
       "title": "Page Header",
       "description": "A page title header used to introduce a section or route.",
       "files": [
-        { "path": "src/components/ui/page-header.tsx", "type": "registry:ui" }
+        {
+          "path": "src/components/ui/page-header.tsx",
+          "type": "registry:ui"
+        }
       ]
     },
     {
@@ -1136,7 +1185,10 @@
       "title": "Use Mounted After",
       "description": "Hook returns true after component mounted for given delay. For client-only animations.",
       "files": [
-        { "path": "src/hooks/use-mounted-after.ts", "type": "registry:hook" }
+        {
+          "path": "src/hooks/use-mounted-after.ts",
+          "type": "registry:hook"
+        }
       ]
     },
     {
@@ -1145,7 +1197,10 @@
       "title": "Card Item Types",
       "description": "Type definitions and size map for the CardGrid component.",
       "files": [
-        { "path": "src/lib/cards.ts", "type": "registry:lib" }
+        {
+          "path": "src/lib/cards.ts",
+          "type": "registry:lib"
+        }
       ]
     },
     {
@@ -1153,10 +1208,18 @@
       "type": "registry:ui",
       "title": "Theme Toggle",
       "description": "Toggle button switching light/dark themes via next-themes.",
-      "dependencies": ["next-themes", "@phosphor-icons/react"],
-      "registryDependencies": ["button"],
+      "dependencies": [
+        "next-themes",
+        "@phosphor-icons/react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
       "files": [
-        { "path": "src/components/ui/theme-toggle.tsx", "type": "registry:ui" }
+        {
+          "path": "src/components/ui/theme-toggle.tsx",
+          "type": "registry:ui"
+        }
       ]
     },
     {
@@ -1164,10 +1227,19 @@
       "type": "registry:ui",
       "title": "Card Grid",
       "description": "Responsive grid of cards with motion entrance animation.",
-      "dependencies": ["motion"],
-      "registryDependencies": ["card", "badge", "cards"],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "card",
+        "badge",
+        "https://ui.arthurreira.dev/r/cards.json"
+      ],
       "files": [
-        { "path": "src/components/ui/card-grid.tsx", "type": "registry:ui" }
+        {
+          "path": "src/components/ui/card-grid.tsx",
+          "type": "registry:ui"
+        }
       ]
     },
     {
