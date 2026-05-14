@@ -1,4 +1,5 @@
-import { ArrowRight, Blocks, Component, ToyBrick } from "lucide-react";
+"use client" 
+import { ArrowRightIcon, CodeBlockIcon, DiamondsFourIcon, LegoIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 
 import { MCPTabs } from "@/components/registry/mcp-tabs";
@@ -35,7 +36,7 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <CardTitle>Blocks</CardTitle>
             <div className="rounded-md bg-primary p-1">
-              <Blocks className="size-5 text-primary-foreground" />
+              <CodeBlockIcon className="size-5 text-primary-foreground" />
             </div>
           </div>
           <CardDescription>
@@ -56,7 +57,7 @@ export default function Home() {
                 >
                   {item.title}
                 </Link>
-                <ArrowRight className="size-4 text-muted-foreground" />
+                <ArrowRightIcon className="size-4 text-muted-foreground" />
               </div>
             ))}
           </div>
@@ -69,7 +70,7 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <CardTitle>UI Primitives</CardTitle>
               <div className="rounded-md bg-foreground p-1">
-                <ToyBrick className="size-5 text-primary-foreground" />
+                <DiamondsFourIcon className="size-5 text-primary-foreground" />
               </div>
             </div>
             <CardDescription>
@@ -90,7 +91,7 @@ export default function Home() {
                   >
                     {item.title}
                   </Link>
-                  <ArrowRight className="size-4 text-muted-foreground" />
+                  <ArrowRightIcon className="size-4 text-muted-foreground" />
                 </div>
               ))}
             </div>
@@ -102,7 +103,7 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <CardTitle>Components</CardTitle>
               <div className="rounded-md bg-foreground p-1">
-                <Component className="size-5 text-primary-foreground" />
+                <LegoIcon className="size-5 text-primary-foreground" />
               </div>
             </div>
             <CardDescription>
@@ -123,7 +124,7 @@ export default function Home() {
                   >
                     {item.title}
                   </Link>
-                  <ArrowRight className="size-4 text-muted-foreground" />
+                  <ArrowRightIcon className="size-4 text-muted-foreground" />
                 </div>
               ))}
             </div>

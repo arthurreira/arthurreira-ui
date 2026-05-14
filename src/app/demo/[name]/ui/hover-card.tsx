@@ -4,7 +4,7 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { CalendarDays } from "lucide-react";
+import { CalendarDotsIcon } from "@phosphor-icons/react/ssr";
 
 export const hoverCard = {
   name: "hover-card",
@@ -28,7 +28,7 @@ export const hoverCard = {
                 The React Framework – created and maintained by @vercel.
               </p>
               <div className="flex items-center pt-2">
-                <CalendarDays className="mr-2 size-4 opacity-70" />
+                <CalendarDotsIcon className="mr-2 size-4 opacity-70" />
                 <span className="text-xs text-muted-foreground">
                   Joined December 2021
                 </span>

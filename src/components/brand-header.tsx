@@ -1,6 +1,6 @@
 "use client";
 
-import { HelpCircle, Menu, Search, X } from "lucide-react";
+import { InfoIcon, DotsThreeIcon, MagnifyingGlassIcon, XIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -99,7 +99,7 @@ function AppShellHeader() {
             className="hidden size-8 md:flex"
             onClick={toggleSidebar}
           >
-            {isCollapsed ? <Menu className="size-4" /> : <X className="size-4" />}
+            {isCollapsed ? <DotsThreeIcon className="size-4" /> : <XIcon className="size-4" />}
           </Button>
 
           <Button
@@ -108,7 +108,7 @@ function AppShellHeader() {
             className="size-8 md:hidden"
             onClick={toggleSidebar}
           >
-            <Menu className="size-4" />
+            <DotsThreeIcon className="size-4" />
           </Button>
 
           <Link href="/" className="flex items-center">
@@ -126,7 +126,7 @@ function AppShellHeader() {
                 autoFocus
                 onBlur={() => setIsSearchOpen(false)}
               />
-              <Search className="absolute top-2.5 left-3 size-4 text-foreground" />
+              <MagnifyingGlassIcon className="absolute top-2.5 left-3 size-4 text-foreground" />
             </div>
           ) : (
             <Button
@@ -135,13 +135,13 @@ function AppShellHeader() {
               className="text-foreground"
               onClick={() => setIsSearchOpen(true)}
             >
-              <Search className="mr-2 size-4" />
+              <MagnifyingGlassIcon   className="mr-2 size-4" />
               Search
             </Button>
           )}
 
           <Button variant="ghost" size="sm" className="text-foreground">
-            <HelpCircle className="mr-2 size-4" />
+            <InfoIcon className="mr-2 size-4" />
             Support
           </Button>
 
@@ -158,7 +158,7 @@ function AppShellHeader() {
 
         <div className="flex gap-2 md:hidden">
           <Button variant="ghost" size="sm" className="text-foreground">
-            <Search className="h-5 w-5" />
+            <MagnifyingGlassIcon className="h-5 w-5" />
           </Button>
           <Avatar className="size-8">
             <AvatarFallback className="bg-primary text-primary-foreground">

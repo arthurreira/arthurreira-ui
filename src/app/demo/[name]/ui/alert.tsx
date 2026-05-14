@@ -1,12 +1,12 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { AlertCircle, Terminal } from "lucide-react";
+import { TerminalIcon, WarningIcon } from "@phosphor-icons/react/ssr";
 
 export const alert = {
   name: "alert",
   components: {
     Default: (
       <Alert>
-        <Terminal className="size-4" />
+        <TerminalIcon className="size-4" />
         <AlertTitle>Heads up!</AlertTitle>
         <AlertDescription>
           You can add components to your app using the cli.
@@ -15,7 +15,7 @@ export const alert = {
     ),
     Destructive: (
       <Alert variant="destructive">
-        <AlertCircle className="size-4" />
+        <WarningIcon className="size-4" />
         <AlertTitle>Error</AlertTitle>
         <AlertDescription>
           Your session has expired. Please log in again.

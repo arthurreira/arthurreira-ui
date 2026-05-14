@@ -1,17 +1,17 @@
 "use client";
 
 import {
-  AlertTriangle,
-  BarChart2,
-  Clock,
-  Database,
-  Home,
-  LayoutGrid,
-  MessageSquareText,
-  MoreHorizontal,
-  Plus,
-  Table,
-} from "lucide-react";
+  WarningIcon,
+  ChartBarIcon,
+  ClockIcon,
+  DatabaseIcon,
+  HouseIcon,
+  GridNineIcon,
+  ChatTextIcon,
+  ArrowsHorizontalIcon,
+  PlusIcon,
+  TableIcon,
+} from "@phosphor-icons/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type * as React from "react";
@@ -60,22 +60,22 @@ export function BrandSidebar({
     {
       title: "Home",
       href: "#",
-      icon: <Home className="size-4" />,
+      icon: <HouseIcon className="size-4" />,
     },
     {
       title: "Projects",
       href: "#projects",
-      icon: <LayoutGrid className="size-4" />,
+      icon: <GridNineIcon className="size-4" />,
     },
     {
       title: "Databases",
       href: "#databases",
-      icon: <Database className="size-4" />,
+      icon: <DatabaseIcon className="size-4" />,
     },
     {
       title: "Tables",
       href: "#tables",
-      icon: <Table className="size-4" />,
+      icon: <TableIcon className="size-4" />,
       badge: {
         text: "Beta",
       },
@@ -83,7 +83,7 @@ export function BrandSidebar({
     {
       title: "AI",
       href: "#ai",
-      icon: <MessageSquareText className="size-4" />,
+      icon: <ChatTextIcon className="size-4" />,
       badge: {
         text: "Alpha",
       },
@@ -94,22 +94,22 @@ export function BrandSidebar({
     {
       title: "Alerts",
       href: "#alerts",
-      icon: <AlertTriangle className="size-4" />,
+      icon: <WarningIcon className="size-4" />,
     },
     {
       title: "Analytics",
       href: "#analytics",
-      icon: <BarChart2 className="size-4" />,
+      icon: <ChartBarIcon className="size-4" />,
     },
     {
       title: "History",
       href: "#history",
-      icon: <Clock className="size-4" />,
+      icon: <ClockIcon className="size-4" />,
     },
     {
       title: "More",
       href: "#more",
-      icon: <MoreHorizontal className="size-4" />,
+      icon: <ArrowsHorizontalIcon className="size-4" />,
     },
   ];
 
@@ -118,7 +118,7 @@ export function BrandSidebar({
       <SidebarHeader>
         <div className={cn(isCollapsed ? "py-2" : "p-2")}>
           <Button className={cn(isCollapsed ? "h-8 w-8 p-0" : "w-full")}>
-            <Plus className={cn("size-4", !isCollapsed && "mr-1")} />
+            <PlusIcon className={cn("size-4", !isCollapsed && "mr-1")} />
             {!isCollapsed && <span>Create</span>}
           </Button>
         </div>

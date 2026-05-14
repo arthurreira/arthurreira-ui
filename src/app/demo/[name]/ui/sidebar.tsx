@@ -9,14 +9,20 @@ import {
   SidebarMenuItem,
   SidebarProvider,
 } from "@/components/ui/sidebar";
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
+import {
+  ArchiveBoxIcon,
+  CalendarIcon,
+  GearIcon,
+  HouseIcon,
+  MagnifyingGlassIcon,
+} from "@phosphor-icons/react/ssr";
 
 const items = [
-  { title: "Home", url: "#", icon: Home },
-  { title: "Inbox", url: "#", icon: Inbox },
-  { title: "Calendar", url: "#", icon: Calendar },
-  { title: "Search", url: "#", icon: Search },
-  { title: "Settings", url: "#", icon: Settings },
+  { title: "Home", url: "#", icon: HouseIcon },
+  { title: "Inbox", url: "#", icon: ArchiveBoxIcon },
+  { title: "Calendar", url: "#", icon: CalendarIcon },
+  { title: "Search", url: "#", icon: MagnifyingGlassIcon },
+  { title: "Settings", url: "#", icon: GearIcon },
 ];
 
 export const sidebar = {

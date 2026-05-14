@@ -7,7 +7,14 @@ import {
   CommandList,
   CommandSeparator,
 } from "@/components/ui/command";
-import { Calculator, Calendar, CreditCard, Settings, Smile, User } from "lucide-react";
+import {
+  CalculatorIcon,
+  CalendarIcon,
+  CreditCardIcon,
+  GearIcon,
+  SmileyIcon,
+  UserIcon,
+} from "@phosphor-icons/react/ssr";
 
 export const command = {
   name: "command",
@@ -19,30 +26,30 @@ export const command = {
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading="Suggestions">
             <CommandItem>
-              <Calendar className="mr-2 size-4" />
+              <CalendarIcon className="mr-2 size-4" />
               <span>Calendar</span>
             </CommandItem>
             <CommandItem>
-              <Smile className="mr-2 size-4" />
+              <SmileyIcon className="mr-2 size-4" />
               <span>Search Emoji</span>
             </CommandItem>
             <CommandItem>
-              <Calculator className="mr-2 size-4" />
+              <CalculatorIcon className="mr-2 size-4" />
               <span>Calculator</span>
             </CommandItem>
           </CommandGroup>
           <CommandSeparator />
           <CommandGroup heading="Settings">
             <CommandItem>
-              <User className="mr-2 size-4" />
+              <UserIcon className="mr-2 size-4" />
               <span>Profile</span>
             </CommandItem>
             <CommandItem>
-              <CreditCard className="mr-2 size-4" />
+              <CreditCardIcon className="mr-2 size-4" />
               <span>Billing</span>
             </CommandItem>
             <CommandItem>
-              <Settings className="mr-2 size-4" />
+              <GearIcon className="mr-2 size-4" />
               <span>Settings</span>
             </CommandItem>
           </CommandGroup>

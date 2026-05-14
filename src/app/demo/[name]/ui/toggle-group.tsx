@@ -1,4 +1,8 @@
-import { Bold, Italic, Underline } from "lucide-react";
+import {
+  TextBIcon,
+  TextItalicIcon,
+  TextUnderlineIcon,
+} from "@phosphor-icons/react/ssr";
 
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
@@ -8,16 +12,16 @@ export const toggleGroup = {
     Default: (
       <ToggleGroup type="multiple">
         <ToggleGroupItem value="bold" aria-label="Toggle bold">
-          <Bold className="h-4 w-4" />
+          <TextBIcon className="h-4 w-4" />
         </ToggleGroupItem>
         <ToggleGroupItem value="italic" aria-label="Toggle italic">
-          <Italic className="h-4 w-4" />
+          <TextItalicIcon className="h-4 w-4" />
         </ToggleGroupItem>
         <ToggleGroupItem
           value="strikethrough"
           aria-label="Toggle strikethrough"
         >
-          <Underline className="h-4 w-4" />
+          <TextUnderlineIcon className="h-4 w-4" />
         </ToggleGroupItem>
       </ToggleGroup>
     ),

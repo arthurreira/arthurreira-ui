@@ -79,7 +79,7 @@
           "sidebar-ring": "oklch(0.56 0.021 213.5)"
         }
       },
-      "dependencies": ["radix-ui"],
+      "dependencies": ["radix-ui", "@phosphor-icons/react"],
       "files": [
         {
           "path": "registry/common/globals.css",
@@ -346,6 +346,7 @@
       "type": "registry:component",
       "title": "Brand Header",
       "description": "Styled header. Marketing mode (links prop) or app-shell mode (with sidebar).",
+      "dependencies": ["@phosphor-icons/react"],
       "registryDependencies": [
         "theme",
         "button",
@@ -379,6 +380,7 @@
       "type": "registry:component",
       "title": "Brand Sidebar",
       "description": "A styled, simple, reusable sidebar",
+      "dependencies": ["@phosphor-icons/react"],
       "registryDependencies": [
         "theme",
         "badge",
@@ -519,6 +521,7 @@
       "type": "registry:component",
       "title": "Product Grid",
       "description": "Product grid displaying all products with API to fetch data",
+      "dependencies": ["@phosphor-icons/react"],
       "registryDependencies": [
         "theme"
       ],
@@ -545,6 +548,7 @@
       "type": "registry:ui",
       "title": "Accordion",
       "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/accordion.tsx",
@@ -617,6 +621,7 @@
       "type": "registry:ui",
       "title": "Breadcrumb",
       "description": "Displays the path to the current resource using a hierarchy of links.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/breadcrumb.tsx",
@@ -641,6 +646,7 @@
       "type": "registry:ui",
       "title": "Calendar",
       "description": "A date field component that allows users to enter and edit date.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/calendar.tsx",
@@ -665,6 +671,7 @@
       "type": "registry:ui",
       "title": "Carousel",
       "description": "A carousel with motion and swipe built using Embla.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/carousel.tsx",
@@ -689,6 +696,7 @@
       "type": "registry:ui",
       "title": "Checkbox",
       "description": "Allows users to select multiple items from a list of options.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/checkbox.tsx",
@@ -713,6 +721,7 @@
       "type": "registry:ui",
       "title": "Command",
       "description": "Fast, composable, unstyled command menu for React.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/command.tsx",
@@ -725,6 +734,7 @@
       "type": "registry:ui",
       "title": "Context Menu",
       "description": "Displays a menu located at the pointer, triggered by a right-click or a long-press.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/context-menu.tsx",
@@ -737,6 +747,7 @@
       "type": "registry:ui",
       "title": "Dialog",
       "description": "A modal dialog that interrupts the user with important content.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/dialog.tsx",
@@ -761,6 +772,7 @@
       "type": "registry:ui",
       "title": "Dropdown Menu",
       "description": "Displays a menu to the user triggered by a button.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/dropdown-menu.tsx",
@@ -809,6 +821,7 @@
       "type": "registry:ui",
       "title": "Input OTP",
       "description": "Accessible one-time password component with copy paste functionality.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/input-otp.tsx",
@@ -833,6 +846,7 @@
       "type": "registry:ui",
       "title": "Menubar",
       "description": "A visually persistent menu common in desktop applications.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/menubar.tsx",
@@ -845,6 +859,7 @@
       "type": "registry:ui",
       "title": "Navigation Menu",
       "description": "A collection of links for navigating websites.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/navigation-menu.tsx",
@@ -857,6 +872,7 @@
       "type": "registry:ui",
       "title": "Pagination",
       "description": "Pagination with page navigation, next and previous links.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/pagination.tsx",
@@ -893,6 +909,7 @@
       "type": "registry:ui",
       "title": "Radio Group",
       "description": "A set of checkable buttons where only one button can be checked at a time.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/radio-group.tsx",
@@ -905,6 +922,7 @@
       "type": "registry:ui",
       "title": "Resizable",
       "description": "Accessible resizable panel groups and layouts with keyboard support.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/resizable.tsx",
@@ -929,6 +947,7 @@
       "type": "registry:ui",
       "title": "Select",
       "description": "Displays a list of options for the user to pick from—triggered by a button.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/select.tsx",
@@ -953,6 +972,7 @@
       "type": "registry:ui",
       "title": "Sheet",
       "description": "Extends the Dialog component to display content that complements the main content of the screen.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/sheet.tsx",
@@ -965,6 +985,7 @@
       "type": "registry:ui",
       "title": "Sidebar",
       "description": "A composable, themeable and customizable sidebar component.",
+      "dependencies": ["@phosphor-icons/react"],
       "files": [
         {
           "path": "src/components/ui/sidebar.tsx",

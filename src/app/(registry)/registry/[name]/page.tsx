@@ -1,4 +1,4 @@
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeftIcon } from "@phosphor-icons/react/ssr";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -33,7 +33,7 @@ export default async function RegistryItemPage({
         <div>
           <Button variant="ghost" size="sm" asChild className="mb-4">
             <Link href="/">
-              <ArrowLeft className="mr-2 size-4" />
+              <ArrowLeftIcon className="mr-2 size-4" />
               Back to Home
             </Link>
           </Button>

@@ -1,15 +1,15 @@
 "use client";
 
 import {
-  Blocks,
-  ChevronDown,
-  Component,
-  Home,
-  Menu,
-  Search,
-  ToyBrick,
-  X,
-} from "lucide-react";
+  CodeBlockIcon,
+  TagChevronIcon,
+  DiamondsFourIcon,
+  HouseIcon,
+  HamburgerIcon,
+  FileSearchIcon,
+  LegoIcon,
+  XIcon,
+} from "@phosphor-icons/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -54,7 +54,7 @@ export function MobileSidebarTrigger() {
   return (
     <div className="absolute top-8 right-4 md:hidden">
       <Button aria-label="Open menu" onClick={() => setOpenMobile(true)}>
-        <Menu className="size-5" />
+        <HamburgerIcon className="size-5" />
       </Button>
     </div>
   );
@@ -107,12 +107,12 @@ export function RegistrySidebar() {
             className="md:hidden"
             onClick={() => setOpenMobile(false)}
           >
-            <X />
+            <XIcon   />
           </Button>
         </div>
         <div className="px-2 py-2 opacity-100 transition-all duration-200">
           <div className="relative">
-            <Search className="absolute top-2.5 left-2.5 size-4 text-muted-foreground" />
+            <FileSearchIcon className="absolute top-2.5 left-2.5 size-4 text-muted-foreground" />
             <Input
               type="search"
               placeholder="Search..."
@@ -131,12 +131,12 @@ export function RegistrySidebar() {
               <CollapsibleTrigger className="w-full">
                 <SidebarGroupLabel className="flex cursor-pointer items-center justify-between">
                   <div className="flex min-w-0 items-center">
-                    <Home className="size-4 flex-shrink-0" />
+                    <HouseIcon className="size-4 flex-shrink-0" />
                     <span className="ml-2 opacity-100 transition-all duration-200">
                       Getting Started
                     </span>
                   </div>
-                  <ChevronDown className="size-4 flex-shrink-0 opacity-100 transition-all duration-200 group-data-[state=open]/collapsible:rotate-180" />
+                  <TagChevronIcon className="size-4 flex-shrink-0 opacity-100 transition-all duration-200 group-data-[state=open]/collapsible:rotate-180" />
                 </SidebarGroupLabel>
               </CollapsibleTrigger>
 
@@ -169,12 +169,12 @@ export function RegistrySidebar() {
               <CollapsibleTrigger className="w-full">
                 <SidebarGroupLabel className="flex cursor-pointer items-center justify-between">
                   <div className="flex min-w-0 items-center">
-                    <Blocks className="size-4 flex-shrink-0" />
+                    <CodeBlockIcon className="size-4 flex-shrink-0" />
                     <span className="ml-2 transition-all duration-200">
                       Blocks
                     </span>
                   </div>
-                  <ChevronDown className="size-4 flex-shrink-0 transition-all duration-200 group-data-[state=open]/collapsible:rotate-180" />
+                  <TagChevronIcon className="size-4 flex-shrink-0 transition-all duration-200 group-data-[state=open]/collapsible:rotate-180" />
                 </SidebarGroupLabel>
               </CollapsibleTrigger>
 
@@ -207,12 +207,12 @@ export function RegistrySidebar() {
               <CollapsibleTrigger className="w-full">
                 <SidebarGroupLabel className="flex cursor-pointer items-center justify-between">
                   <div className="flex min-w-0 items-center">
-                    <Component className="size-4 flex-shrink-0" />
+                    <DiamondsFourIcon className="size-4 flex-shrink-0" />
                     <span className="ml-2 transition-all duration-200">
                       Components
                     </span>
                   </div>
-                  <ChevronDown className="size-4 flex-shrink-0 transition-all duration-200 group-data-[state=open]/collapsible:rotate-180" />
+                  <TagChevronIcon className="size-4 flex-shrink-0 transition-all duration-200 group-data-[state=open]/collapsible:rotate-180" />
                 </SidebarGroupLabel>
               </CollapsibleTrigger>
 
@@ -245,12 +245,12 @@ export function RegistrySidebar() {
               <CollapsibleTrigger className="w-full">
                 <SidebarGroupLabel className="flex cursor-pointer items-center justify-between">
                   <div className="flex min-w-0 items-center">
-                    <ToyBrick className="size-4 flex-shrink-0" />
+                    <LegoIcon className="size-4 flex-shrink-0" />
                     <span className="ml-2 transition-all duration-200">
                       UI Primitives
                     </span>
                   </div>
-                  <ChevronDown className="size-4 flex-shrink-0 transition-all duration-200 group-data-[state=open]/collapsible:rotate-180" />
+                  <TagChevronIcon className="size-4 flex-shrink-0 transition-all duration-200 group-data-[state=open]/collapsible:rotate-180" />
                 </SidebarGroupLabel>
               </CollapsibleTrigger>
               <CollapsibleContent>

@@ -1,7 +1,7 @@
 "use client"
 
 import { useTheme } from "next-themes"
-import { SunIcon, MoonIcon } from "lucide-react"
+import { SunIcon, MoonIcon } from "@phosphor-icons/react"
 import { Button } from "@/components/ui/button"
 
 export function ThemeToggle() {

@@ -25,6 +25,7 @@ import { breadcrumb } from "@/app/demo/[name]/ui/breadcrumb";
 import { button } from "@/app/demo/[name]/ui/button";
 import { calendar } from "@/app/demo/[name]/ui/calendar";
 import { card } from "@/app/demo/[name]/ui/card";
+import { cardGrid } from "@/app/demo/[name]/ui/card-grid";
 import { carousel } from "@/app/demo/[name]/ui/carousel";
 import { chart } from "@/app/demo/[name]/ui/chart";
 import { checkbox } from "@/app/demo/[name]/ui/checkbox";
@@ -97,6 +98,7 @@ export const demos: { [name: string]: Demo } = {
   button,
   calendar,
   card,
+  "card-grid": cardGrid,
   carousel,
   chart,
   checkbox,

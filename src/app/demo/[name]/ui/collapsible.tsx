@@ -7,7 +7,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { Button } from "@/components/ui/button";
-import { ChevronsUpDown } from "lucide-react";
+import { CaretUpDownIcon } from "@phosphor-icons/react";
 
 function CollapsibleDemo() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ function CollapsibleDemo() {
         <h4 className="text-sm font-semibold">@peduarte starred 3 repositories</h4>
         <CollapsibleTrigger asChild>
           <Button variant="ghost" size="sm" className="w-9 p-0">
-            <ChevronsUpDown className="size-4" />
+            <CaretUpDownIcon className="size-4" />
             <span className="sr-only">Toggle</span>
           </Button>
         </CollapsibleTrigger>

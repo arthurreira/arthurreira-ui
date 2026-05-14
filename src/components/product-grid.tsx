@@ -1,6 +1,6 @@
 "use client";
 
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCartIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -63,7 +63,7 @@ export default function ProductGrid({
             <CardFooter className="flex items-center justify-between p-4 pt-0">
               <div className="font-semibold">${product.price.toFixed(2)}</div>
               <Button size="sm">
-                <ShoppingCart className="mr-2 size-4" /> Add
+                <ShoppingCartIcon className="mr-2 size-4" /> Add
               </Button>
             </CardFooter>
           </Card>

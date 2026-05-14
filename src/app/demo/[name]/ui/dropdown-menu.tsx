@@ -1,18 +1,18 @@
 import {
-  Cloud,
-  CreditCard,
-  Github,
-  Keyboard,
-  LifeBuoy,
-  LogOut,
-  Mail,
-  MessageSquare,
-  Plus,
-  PlusCircle,
-  Settings,
-  User,
-  Users,
-} from "lucide-react";
+  CloudIcon,
+  CreditCardIcon,
+  GithubLogoIcon,
+  KeyboardIcon,
+  LifebuoyIcon,
+  SignOutIcon,
+  MailboxIcon,
+  ChatCenteredIcon,
+  PlusIcon,
+  PlusCircleIcon,
+  GearIcon,
+  UserIcon,
+  UsersIcon,
+} from "@phosphor-icons/react/ssr";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -43,22 +43,22 @@ export const dropdownMenu = {
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
             <DropdownMenuItem>
-              <User />
+              <UserIcon />
               <span>Profile</span>
               <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <CreditCard />
+              <CreditCardIcon />
               <span>Billing</span>
               <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Settings />
+              <GearIcon />
               <span>Settings</span>
               <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Keyboard />
+              <KeyboardIcon />
               <span>Keyboard shortcuts</span>
               <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
             </DropdownMenuItem>
@@ -66,11 +66,11 @@ export const dropdownMenu = {
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
             <DropdownMenuItem>
-              <Users />
+              <UsersIcon />
               <span>Team</span>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Plus />
+              <PlusIcon />
               <span>New Team</span>
               <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
             </DropdownMenuItem>
@@ -82,16 +82,16 @@ export const dropdownMenu = {
             <DropdownMenuPortal>
               <DropdownMenuSubContent>
                 <DropdownMenuItem>
-                  <Mail />
+                  <MailboxIcon />
                   <span>Email</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <MessageSquare />
+                  <ChatCenteredIcon />
                   <span>Message</span>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
-                  <PlusCircle />
+                  <PlusCircleIcon />
                   <span>More...</span>
                 </DropdownMenuItem>
               </DropdownMenuSubContent>
@@ -99,20 +99,20 @@ export const dropdownMenu = {
           </DropdownMenuSub>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
-            <Github />
+            <GithubLogoIcon />
             <span>GitHub</span>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <LifeBuoy />
+            <LifebuoyIcon />
             <span>Support</span>
           </DropdownMenuItem>
           <DropdownMenuItem disabled>
-            <Cloud />
+            <CloudIcon />
             <span>API</span>
           </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
-            <LogOut />
+            <SignOutIcon />
             <span>Log out</span>
             <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
           </DropdownMenuItem>

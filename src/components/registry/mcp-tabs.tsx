@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, ClipboardIcon } from "lucide-react";
+import { CheckIcon, ClipboardIcon } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
 
 import { AddToCursor } from "@/components/registry/add-to-cursor";
@@ -78,7 +78,7 @@ export function MCPTabs({ rootUrl }: { rootUrl: string }) {
             }}
             className="shadow-none"
           >
-            {hasCopied ? <Check /> : <ClipboardIcon />}
+            {hasCopied ? <CheckIcon /> : <ClipboardIcon />}
             Copy
           </Button>
         </div>

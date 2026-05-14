@@ -1,7 +1,7 @@
 "use client";
 
 import { DropdownMenu as DropdownMenuPrimitive } from "radix-ui";
-import { CheckIcon, ChevronRightIcon, CircleIcon } from "lucide-react";
+import { CheckIcon, TagChevronIcon, CircleIcon } from "@phosphor-icons/react";
 import type * as React from "react";
 
 import { cn } from "@/lib/utils";
@@ -217,7 +217,7 @@ function DropdownMenuSubTrigger({
       {...props}
     >
       {children}
-      <ChevronRightIcon className="ml-auto size-4" />
+      <TagChevronIcon className="ml-auto size-4" />
     </DropdownMenuPrimitive.SubTrigger>
   );
 }

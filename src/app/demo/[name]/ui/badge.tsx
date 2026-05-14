@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight } from "lucide-react";
+import { ArrowRightIcon } from "@phosphor-icons/react/ssr";
 import Link from "next/link";
 
 export const badge = {
@@ -14,7 +14,7 @@ export const badge = {
       <Badge>
         <Link href="#" className="flex items-center gap-1">
           Link
-          <ArrowRight className="size-3" />
+          <ArrowRightIcon className="size-3" />
         </Link>
       </Badge>
     ),
@@ -22,7 +22,7 @@ export const badge = {
       <Badge variant="secondary">
         <Link href="#" className="flex items-center gap-1">
           Link
-          <ArrowRight className="size-3" />
+          <ArrowRightIcon className="size-3" />
         </Link>
       </Badge>
     ),
@@ -30,7 +30,7 @@ export const badge = {
       <Badge variant="outline">
         <Link href="#" className="flex items-center gap-1">
           Link
-          <ArrowRight className="size-3" />
+          <ArrowRightIcon className="size-3" />
         </Link>
       </Badge>
     ),
@@ -38,7 +38,7 @@ export const badge = {
       <Badge variant="destructive">
         <Link href="#" className="flex items-center gap-1">
           Link
-          <ArrowRight className="size-3" />
+          <ArrowRightIcon className="size-3" />
         </Link>
       </Badge>
     ),

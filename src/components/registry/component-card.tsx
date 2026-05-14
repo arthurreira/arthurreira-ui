@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Copy } from "lucide-react";
+import { CheckIcon, CopyIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 
 import { OpenInV0Button } from "@/components/registry/open-in-v0";
@@ -75,9 +75,9 @@ export function ComponentCard({
                         aria-label="Copy npx command to clipboard"
                       >
                         {copied ? (
-                          <Check className="size-4" />
+                          <CheckIcon className="size-4" />
                         ) : (
-                          <Copy className="size-4" />
+                          <CopyIcon className="size-4" />
                         )}
                       </Button>
                     </TooltipTrigger>

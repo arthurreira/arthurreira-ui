@@ -1,5 +1,5 @@
 import { format } from "date-fns";
-import { CalendarIcon } from "lucide-react";
+import { CalendarIcon } from "@phosphor-icons/react/ssr";
 import * as React from "react";
 
 import { Button } from "@/components/ui/button";

@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeftIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 import type React from "react";
 
@@ -14,7 +14,7 @@ export default function TokensPage() {
       <div className="mb-8">
         <Button variant="ghost" size="sm" asChild className="mb-4">
           <Link href="/">
-            <ArrowLeft className="mr-2 size-4" />
+            <ArrowLeftIcon className="mr-2 size-4" />
             Back to Home
           </Link>
         </Button>
