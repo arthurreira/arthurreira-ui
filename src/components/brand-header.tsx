@@ -2,16 +2,89 @@
 
 import { HelpCircle, Menu, Search, X } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useSidebar } from "@/components/ui/sidebar";
+import { useMountedAfter } from "@/hooks/useMountedAfter";
+import { cn } from "@/lib/utils";
 
-import { Logo } from "./logo";
+import { Logo } from "@/components/logo";
 
-export function BrandHeader() {
+interface NavLink {
+  href: string;
+  label: string;
+}
+
+interface BrandHeaderProps {
+  /** Marketing mode: pass nav links to render simple sticky scroll-aware header */
+  links?: NavLink[];
+  /** Marketing mode: brand label shown when links present */
+  brandLabel?: string;
+  /** Marketing mode: brand href, defaults to "/" */
+  brandHref?: string;
+}
+
+export function BrandHeader({ links, brandLabel, brandHref = "/" }: BrandHeaderProps) {
+  // Marketing mode: links passed → scroll-aware nav header
+  if (links) {
+    return <MarketingHeader links={links} label={brandLabel ?? ""} href={brandHref} />;
+  }
+
+  // App-shell mode: no links → sidebar toggle + search + avatar
+  return <AppShellHeader />;
+}
+
+function MarketingHeader({
+  links,
+  label,
+  href,
+}: {
+  links: NavLink[];
+  label: string;
+  href: string;
+}) {
+  const [scrolled, setScrolled] = useState(false);
+  const mounted = useMountedAfter();
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <header
+      className={cn(
+        "sticky top-0 z-50 w-full transition-all duration-300",
+        scrolled
+          ? "h-12 border-b bg-background/80 backdrop-blur-sm"
+          : "h-16 border-transparent bg-transparent"
+      )}
+    >
+      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-8 md:px-10 lg:px-4">
+        <Link
+          href={href}
+          data-loaded={mounted}
+          className="nav-logo scroll-m-20 text-balance font-extrabold tracking-tight"
+        >
+          {label}
+        </Link>
+        <nav className="flex items-center gap-3">
+          {links.map((link) => (
+            <Link key={link.href} href={link.href} className="text-sm text-foreground hover:text-primary">
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+      </div>
+    </header>
+  );
+}
+
+function AppShellHeader() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const { state, toggleSidebar } = useSidebar();
   const isCollapsed = state === "collapsed";
@@ -26,11 +99,7 @@ export function BrandHeader() {
             className="hidden size-8 md:flex"
             onClick={toggleSidebar}
           >
-            {isCollapsed ? (
-              <Menu className="size-4" />
-            ) : (
-              <X className="size-4" />
-            )}
+            {isCollapsed ? <Menu className="size-4" /> : <X className="size-4" />}
           </Button>
 
           <Button
