@@ -411,6 +411,11 @@
       "type": "registry:component",
       "title": "Login",
       "description": "Username & password login section with customer quote.",
+      "dependencies": [
+        "@hookform/resolvers",
+        "react-hook-form",
+        "zod"
+      ],
       "registryDependencies": [
         "theme",
         "badge",
@@ -521,7 +526,7 @@
       "type": "registry:component",
       "title": "Product Grid",
       "description": "Product grid displaying all products with API to fetch data",
-      "dependencies": ["@phosphor-icons/react"],
+      "dependencies": ["@phosphor-icons/react", "zod"],
       "registryDependencies": [
         "theme"
       ],
