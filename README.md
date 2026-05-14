@@ -1,146 +1,90 @@
-<a href="https://registry-starter.vercel.app/">
-  <h1 align="center">Registry Starter</h1>
-</a>
+# arthurreira-ui
 
-<p align="center">
-    Registry Starter is a free, open-source template built with Next.js and Shadcn/ui Registry to accelerate your AI-Native Design System.
-</p>
+Personal component registry built with Next.js and shadcn/ui — hosted at [ui.arthurreira.dev](https://ui.arthurreira.dev).
 
-<p align="center">
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
-  <a href="#open-in-v0"><strong>Open in v0</strong></a> ·
-  <a href="#theming"><strong>Theming</strong></a> ·
-  <a href="#mcp"><strong>MCP</strong></a> ·
-  <a href="#authentication"><strong>Authentication</strong></a> ·
-  <a href="#running-locally"><strong>Running Locally</strong></a> ·
-  <a href="#file-structure"><strong>File Structure</strong></a> ·
-  <a href="https://ui.shadcn.com/docs/registry"><strong>Read Docs</strong></a>
-</p>
-<br/>
+[Install a Component](#install-a-component) · [Available Components](#available-components) · [Running Locally](#running-locally) · [Registry Audit](#registry-audit) · [Changelog](#changelog)
 
-## Deploy Your Own
+## Install a Component
 
-You can deploy your own version of the Next.js Registry Starter to Vercel with one click:
+Any shadcn/ui project can install components directly from this registry:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fregistry-starter&project-name=my-registry&repository-name=my-registry&demo-title=Registry%20Starter&demo-description=Registry%20Starter%20is%20a%20free%2C%20open-source%20template%20built%20with%20Next.js%20and%20Shadcn%2Fui%20Registry%20to%20accelerate%20your%20AI-Native%20Design%20System.&demo-url=https%3A%2F%2Fregistry-starter.vercel.app&demo-image=%2F%2Fregistry-starter.vercel.app%2Fpreview.png)
+```bash
+# Install a single component
+pnpm dlx shadcn@latest add https://ui.arthurreira.dev/r/card-grid.json
 
-## Open in v0
-
-[![Open in v0](https://registry-starter.vercel.app/open-in-v0.svg)](https://v0.dev/chat/api/open?title=Dashboard+Kit&prompt=These+are+existing+design+system+styles+and+files.+Please+utilize+them+alongside+base+components+to+build.&url=https%3A%2F%2Fregistry-starter.vercel.app%2Fr%2Fdashboard.json)
-
-This registry application also exposes `Open in v0` buttons for each component. Once this application is deployed, the
-`Open in v0` button redirects to [`v0.dev`](https://v0.dev) with a prepopulated prompt and a URL pointing back to this
-registry's `/r/${component_name}.json` endpoint. This endpoint will provide v0 the necessary file information, content,
-and metadata to start your v0 chat with your component, theme, and other related code.
-
-These `/r/${component_name}.json` files are generated using `shadcn/ui` during the `build` and `dev` based on the
-repository's [`registry.json`](./registry.json). For more information, refer to the
-[documentation](https://ui.shadcn.com/docs/registry/registry-json).
-
-## Theming
-
-To use a custom theme for all the components, all you need to do is modify the CSS tokens in
-[`globals.css`](./app/globals.css). More information on these practices can be found
-on [ui.shadcn.com/docs](https://ui.shadcn.com/docs).
-
-#### Fonts
-
-To use custom fonts, you can either use [
-`next/font/google`](https://nextjs.org/docs/pages/getting-started/fonts#google-fonts) or the 
-[`@font-face`](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face) CSS rule in your 
-[`globals.css`](./app/globals.css).
-
-```css
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW5rygbi49c.woff2') format('woff2'),
-    url('https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW5rygbj49c.woff') format('woff');
-}
+# Install the full theme (CSS vars, utils, fonts)
+pnpm dlx shadcn@latest add https://ui.arthurreira.dev/r/theme.json
 ```
 
-If you use `@font-face`, ensure you modify [`globals.css`](app/globals.css) tailwind configuration to map 
-your custom font variables to Tailwind fonts. Refer to this
-[Tailwind documentation](https://tailwindcss.com/docs/font-family#customizing-your-theme)
+Dependencies (npm packages and other registry items) are installed automatically.
 
-## MCP
+## Available Components
 
-To use this registry with MCP, you must also edit [`registry.json`](./registry.json)'s first
-`registry-item` named `theme`. This `registry:theme` item not only contains the tailwind configuration, but it also
-contains your design tokens / CSS variables.
+| Name | Type | Description |
+| --- | --- | --- |
+| `theme` | theme | Amber + blue/neutral color palette, Tailwind config, utils |
+| `card-grid` | ui | Responsive bento grid with motion entrance animation |
+| `brand-header` | component | Top navigation bar with search, avatar, and sidebar trigger |
+| `brand-sidebar` | component | Collapsible sidebar with navigation and user section |
+| `logo` | component | Brand logo with light/dark variant |
+| `hero` | component | Hero section with headline and CTA |
+| `promo` | component | Promotional banner component |
+| `login` | component | Login form with react-hook-form + zod validation |
+| `product-grid` | component | Product listing grid with API integration |
+| `page-header` | ui | Page-level header with title and actions slot |
+| `theme-toggle` | ui | Light/dark mode toggle via next-themes |
+| `use-mounted-after` | hook | Returns true after mount delay — for client-only animations |
+| `cards` | lib | `CardItem` type and `cardSizes` map used by `card-grid` |
+| `data-table` | ui | Data table with sorting, filtering, and pagination |
+| `date-picker` | ui | Date picker with calendar popover |
+| `blank` | block | Full app scaffold with all brand components |
+| `dashboard` | block | Dashboard layout with sidebar, header, and data table |
+| `store` | block | Store layout with product grid and filters |
 
-The `shadcn/ui` CLI's MCP command will use the entire `registy.json` file, so it must be put in the `/public` folder
-with all of your `registry:item`s. This will enable you to use your registry in tools like Cursor & Windsurf.
-
-## Authentication
-
-To protect your registry, you must first protect your `registry.json` and all `registry:item` JSON files.  
-This is made possible with an environment variable and basic Next.js Middleware.
-
-1. Create new `REGISTRY_AUTH_TOKEN`. For example, you can generate one:
-
-    ```bash
-    node -e "console.log(crypto.randomBytes(32).toString('base64url'))"
-    ```
-
-2. Add new `middleware.ts` file to protect `/r/:path` routes
-
-    ```ts
-    // middleware.ts
-    import { NextResponse } from "next/server";
-    import type { NextRequest } from "next/server";
-    
-    export const config = { matcher: "/r/:path*" };
-    
-    export function middleware(request: NextRequest) {
-      const token = request.nextUrl.searchParams.get("token");
-    
-      if (token == null || token !== process.env.REGISTRY_AUTH_TOKEN) {
-        return new NextResponse("Unauthorized", { status: 401 });
-      }
-    
-      return NextResponse.next();
-    }
-    
-    ```
-
-When using `Open in v0`, the v0 platform will use the `token` search parameter to authenticate with your Registry:
-
-```ts
-const v0Url = `https://v0.dev/chat/api/open?url=https%3A%2F%2Fregistry-starter.vercel.app%2Fr%2Faccordion.json&token=${process.env.REGISTRY_AUTH_TOKEN}`
-```
-
-> [!NOTE]  
-> This method only protects the `/r/:path` routes, this does NOT protect the Registry's UI / component previews. If you
-> choose to protect the UI / component preview, you must ensure the `registry.json` and all `registry:item`s are 
-> publicly accessible or protected using the `token` search parameter. This ensures v0 and other AI Tools have access to
-> use the registry
-    
-
-## Running locally
+## Running Locally
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-Your app should now be running on [localhost:3000](http://localhost:3000).
+App runs on [localhost:3000](http://localhost:3000). Registry JSON is rebuilt on every `dev` and `build` run via `pnpm registry:build`.
+
+## Registry Audit
+
+A local audit script validates all registry items for correctness. It is gitignored and only runs locally.
+
+```bash
+pnpm audit:registry
+```
+
+Checks:
+
+- npm packages imported but missing from `dependencies`
+- Custom registry items imported but missing from `registryDependencies`
+- Source files referenced in `files[].path` that don't exist on disk
+- Non-standard install paths missing a `target` field
+- Stale `lucide-react` references
 
 ## File Structure
 
-`app/(registry)` routes contains the registry pages.
+```text
+registry.json              # Source of truth for all registry items
+registry/common/           # Shared base files (globals.css, utils.ts, etc.)
+registry/layouts/          # Layout files used by blocks
+src/components/            # Custom components
+src/components/ui/         # shadcn/ui primitives
+src/hooks/                 # React hooks
+src/lib/                   # Business logic and utilities
+public/r/                  # Built registry JSON (gitignored, generated on build)
+```
 
-`app/demo` routes contains various UI primitives, Components, or Blocks (based on `registry.json`)
+## Changelog
 
-`@/components` contains all components used in the registry
+### v0.1.0
 
-`@/components/ui` contains all `shadcn/ui` UI Primitives used in the registry
-
-`@/components/registry` contains all components for this Registry Starter application
-
-`@/hooks` contains all React hooks
-
-`@/lib` contains all business logic & utils
-
-`@/layouts` contains all v0 layouts used in `registry.json`
+- Add `card-grid`, `brand-header`, `brand-sidebar`, `hero`, `promo`, `login`, `product-grid`, `page-header`, `theme-toggle`, `use-mounted-after`, `cards`
+- Migrate all icons to `@phosphor-icons/react`
+- Fix registry deps: add missing npm packages to `login` and `product-grid`
+- Fix registry dep resolution: use full URLs for custom `registryDependencies` to prevent naming collisions with consuming project registries
+- Add local registry audit script (`pnpm audit:registry`)
